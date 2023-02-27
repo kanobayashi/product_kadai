@@ -1,0 +1,438 @@
+*{
+    padding: 0;
+    margin: 0;   
+    font-family:futura;
+    text-align: center;
+
+}
+
+.fadein-anime {
+    -webkit-animation-fill-mode:both;
+    -ms-animation-fill-mode:both;
+    animation-fill-mode:both;
+    -webkit-animation-duration:1.5s;
+    -ms-animation-duration:1.5s;
+    animation-duration:1.5s;
+    -webkit-animation-name: fadein-anime;
+    -ms-animation-name: fadein-anime;
+    animation-name: fadein-anime;
+    visibility: visible !important;
+}
+   @-webkit-keyframes fadein-anime {
+    0% { opacity: 0; -webkit-transform: translateY(-20px); }
+    100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+   @keyframes fadein-anime {
+    0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
+    100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+}
+
+
+
+#header{
+    background-image:url(/images/background1.jpg);
+    background-size: cover;
+    height:100vh;
+}
+ul{
+    display:flex;
+    list-style: none;
+    text-decoration: none;
+    font-size:30px;
+    width:100%;
+    justify-content: flex-end;
+}
+
+
+li{
+    list-style: none;
+    text-decoration: none;
+    margin:20px;
+}
+a{
+    color:#fff;
+    text-decoration: none;
+    transition:0.5s;
+}
+a:hover{
+    color:#3F5EDA;
+
+}
+
+
+h2{
+    font-size:50px;
+    font-weight: normal;
+    color: #3F5EDA;
+}
+
+
+.title{
+    text-align: center;
+    margin-top:210px;
+}
+.title_p{
+    color:#fff;
+    font-style:italic;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#intro{
+    margin: 0 auto;
+    padding:50px 0;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about1_right p{
+    text-align: left;
+    font-family: "Noto Sans JP", sans-serif;
+    margin-bottom: 50px;
+}
+.about2_left p{
+    text-align: left;
+    font-family: "Noto Sans JP", sans-serif;
+    margin-bottom: 50px;
+}
+.about1_left{
+    float:left;
+    margin:50px;
+}
+.about1_right{
+    width:24%;
+    line-height: 40px;
+    float:left;
+    margin:50px;
+}
+.btn_1{
+    background-color: #3F5EDA;
+    padding:10px 40px;
+    border-radius: 10px;
+}
+.about a:hover{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    color:#fff;
+}
+
+.about1::after{
+    content:"";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.about2_right{
+    float:left;
+    margin:50px;
+}
+.about2_left{
+    width:350px;
+    line-height: 40px;
+    float:left;
+    margin:50px;
+}
+.btn_2{
+    background-color:#FEBF04;
+    padding:10px 40px;
+    border-radius: 10px;
+}
+#courses{
+    background-color:#D4E6F9;
+    height:100%;
+    width:100%;
+    align-items: center;
+    padding: 50px 0;
+}
+.container{
+    display: flex; 
+    justify-content: center;
+}
+
+.course{
+    font-size:12px;
+    background-color: #fff;
+    padding:50px;
+    width:150px;
+    height:250px;
+    margin:10px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+#courses h2{
+    margin-bottom:30px;
+}
+.course a:hover{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    color: #fff;
+
+}
+.course_img_h{
+    margin:32px 0;
+    width:80px;
+}
+.course_img_ht{
+    margin:36px 0;
+    width:80px;
+}
+
+.course_img{
+    width:90px;
+    margin:50px 0;
+}
+.course_img_go{
+    width:90px;
+    margin:45px 0;
+}
+.course_p{
+    margin:20px 0;
+    font-size: 15px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: bold;
+    
+}
+
+.html_a{
+    background-color:#F16529;
+    padding:10px 20px;
+    border-radius: 10px;
+
+}
+.css_a{
+    background-color: #28A9DF;
+    padding:10px 20px;
+    border-radius: 10px;
+
+}
+.unity_a{
+    background-color: #000000;
+    padding:8px 20px;
+    border-radius: 10px;
+
+}
+.ruby_a{
+    background-color: #FF5252;
+    padding:8px 20px;
+    border-radius: 10px;
+}
+.js_a{
+    background-color: #FED602;
+    padding:8px 20px;
+    border-radius: 10px;
+}
+.swift_a{
+    background-color: #FE7535;
+    padding:8px 20px;
+    border-radius: 10px;
+}
+.go_a{
+    background-color: #72CEDD;
+    padding:8px 20px;
+    border-radius: 10px;
+}
+
+#images{
+    padding: 50px 0;
+
+}
+.slider{
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.slider img{
+    width: 290px;
+    height: 190px;
+}
+.slider .slick-arrow:before{
+    font-size: 20px;
+    color: #000;
+}
+
+#particles-js {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.wrap {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: relative;
+}
+
+#access{
+    padding: 30px 0;
+}
+#access h2{
+    margin-bottom:30px;
+}
+#footer{
+    margin-bottom:30px;
+}
+.footer_p{
+    color:#3F5EDA;
+    font-size:15px;
+}
+
+@media all and (max-width:480px){
+    html{
+        width:100%;
+    }
+
+    header{
+        background-attachment: scroll;
+        width: 480px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    ul {
+        display: none;
+    }
+    .title img {
+        width: 70%;
+        margin: auto;
+    }
+    .title p {
+        font-size: 16px;
+        text-align: center;
+    }
+    h2 {
+        font-size: 30px;
+        word-wrap: break-word;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .intro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+        font-size: 13px;
+    }
+    .intro_detail2 {
+        flex-wrap: wrap-reverse;
+    }
+    .about1_left {
+        width: 100%;
+        margin-bottom: 20px;
+        line-height: 2;
+    }
+    .about2_right {
+        width: 100%;
+        margin-bottom: 20px;
+        line-height: 2;
+    }
+    .about img {
+        width: 100%;
+        object-fit: contain;
+    }
+    .about1_right p {
+        width: 90%;
+        margin: 0 auto;
+        font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3',"ＭＳ Ｐゴシック",sans-serif;
+    }
+    .about1_right a {
+        display: block;
+        margin: 30px auto;
+        text-decoration: none;
+        width: 170px;
+        height: 40px;
+        background-color: #3D5CDB;
+        color: #ffffff;
+        border-radius: 12px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .course {
+        width: 140px;
+        height: 200px;
+        background-color: #ffffff;
+        margin-top: 20px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 1px 3px rgba(106, 137, 152, 0.2);
+        padding: 10px;
+    }
+    .course a {
+        display: block;
+        margin: 15px auto;
+        text-decoration: none;
+        width: 100%;
+        height: 40px;
+        background-color: #ffbf00;
+        color: #ffffff;
+        border-radius: 10px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .course p{
+        font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3',"ＭＳ Ｐゴシック", sans-serif;
+        font-size: 14px;
+        margin: 0;
+    }
+    .course a:hover {
+        box-shadow: 0 2px 15px 2px rgba(133, 140, 142, 0.4);
+    }
+    .course_img_ht {
+        width: 90px;
+        height: 90px;
+        margin: 10px auto 0;
+    }
+    .course_img_h {
+        width: 90px;
+        height: 90px;
+        margin: 10px auto 0;
+    }
+    .course_img{
+        width: 90px;
+        height: 90px;
+        margin: 10px auto 0;
+    }
+    .course_img_go {
+        width: 90px;
+        height: 90px;
+        margin: 10px auto 0;
+    }
+
+    main{
+        width: 100vw;
+        padding: 0;
+    }
+    #images {
+        margin-bottom: 50px;
+    }
+    #access{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+    .map {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-top: 75%;
+    }
+    .map iframe{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
